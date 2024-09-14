@@ -23,6 +23,7 @@ class DataTransformation:
         self.data_tranformation_config = DataTransformationConfig()
 
     def get_data_transformer_object(self):
+        '''This function makes the transformer object and returns it'''
         try:
             # get all numerical and categorical variables
             numerical_columns = ['writing score', 'reading score']
@@ -69,6 +70,7 @@ class DataTransformation:
         
     
     def initiate_data_transformation(self, train_path, test_path):
+        '''This function applies transformations on the train and test data'''
         try:
             # get train and test data
             train_df = pd.read_csv(train_path)
