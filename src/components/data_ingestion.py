@@ -24,6 +24,7 @@ class DataIngestion:
         self.ingestion_config = DataIngestionConfig() # instanciate dataIngestionConfig object
 
     def initiate_data_ingestion(self):
+        '''This function reads the data, splits into train test and saves it for further use'''
         logging.info("Entered data ingestion method or component")
         try:
             # read the data from csv file or mongoDB
